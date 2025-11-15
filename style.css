@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+.username {
+  background: whitesmoke;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.section{
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 150px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-content span {
+  color: blue;
+}
+
+.hero-content p {
+  color: #555;
+  margin-bottom: 35px;
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.hero-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hero-content button:hover {
+  background-color: #004288;
+}
+
+.hero-image {
+  text-align: center;
+  min-width: 500px;
+}
+
+.hero-image img {
+  width: 80%;
+  max-width: 400px;
+}
+
+.achievements {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.achievements h2 {
+  font-size: 40px;
+  margin-top: 25px;
+  margin-left: 120px;
+  text-align: left;
+  color: black;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  color: black;
+  margin-left: 400px;
+}
+
+.stat-item h3 {
+  font-size: 30px;
+  margin-top: -55px;
+  line-height: 1.2;
+}
+
+.stat-item p {
+  font-size: 20px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 40px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;      
+    justify-content: center;
+  }
+
+  .stat-item h3 {
+    margin-top: 0;           
+    font-size: 30px;
+  }
+
+  .achievements h2 {
+    text-align: center;     
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 2;
+  }
+}
+
+
+.section{
+  grid-template-columns: 1fr 1fr;
+}
+
+.booking-section {
+  background: whitesmoke;
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  border-radius: 20px;
+  margin: 100px auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.services-list {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  line-height: 1.3;
+}
+
+#service-items {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+.service-name { 
+  font-weight: 500; 
+}
+
+.service-price { 
+  color: blue; 
+  font-weight: 600; 
+  margin-left: 100px; 
+}
+
+.service-actions button {
+  margin-left: px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  background: white;
+  color: #555;
+  transition: background 0.5s;
+}
+
+.service-actions .add-btn { 
+  background: rgb(57, 57, 179); 
+  color: white; 
+}
+
+.service-actions .remove-btn { 
+  background: red; 
+  color: white; 
+}
+
+.service-actions button:hover { 
+  opacity: 0.9; 
+}
+
+.add-info { 
+  margin-top: 20px; 
+  color: black; 
+}
+
+.cart-booking {
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-items, .booking-form {
+  background: white;
+  padding: 23px;
+  border-radius: 12px;
+}
+
+.cart-items table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.cart-items th, 
+.cart-items td {
+  text-align: left;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.cart-items th { 
+  font-weight: 500; 
+  color: blue
+}
+
+.cart-items td { 
+  color: black; 
+}
+
+.cart-items .total {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: blue;
+  border-bottom: 1px solid gray;
+}
+
+.booking-form h3 { 
+  margin-bottom: 10px; 
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.booking-form button {
+  background: rgb(57, 57, 179);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#bookingMessage { 
+  margin-top: 14px; 
+  color: green; 
+  font-weight: 500; 
+}
+
+.quality-section {
+  margin: 30px auto;
+  max-width: 900px;
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.quality-section h2 { 
+  margin-bottom: 10px; 
+  color: blue; 
+}
+
+.quality-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.quality-section li {
+  background: white;
+  color: black;
+  font-weight: 500;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.newsletter-section {
+  margin: 30px auto 60px auto;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+
+.newsletter-section h2 { 
+  margin-bottom: 15px; 
+  color: blue; 
+}
+
+.newsletter-section form {
+  display: flex;
+  gap: 15px;
+}
+
+.newsletter-section input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.newsletter-section button {
+  background: rgb(57, 57, 179);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .booking-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+    max-width: 98vw;
+  }
+  .services-list, .cart-booking {
+    padding: 18px;
+  }
+  .cart-booking { 
+    gap: 15px; 
+  }
+  .quality-section ul { 
+    flex-direction: column; 
+    gap: 15px; 
+  }
+}
+
+
+.footer {
+  background: rgb(189, 187, 187);
+  padding: 30px 0 30px 0;
+  font-size: 20px;
+  color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+  color: blue;
+}
+
+.footer-about p {
+  font-size: 15px;
+  color: black;
+}
+
+.footer-link {
+  color: blue;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+}
+
+.footer-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: black;
+}
+
+.footer-links a:hover {
+  color: blue;
+}
+
+.footer-contact div {
+  margin-bottom: 5px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer-social-icon {
+  display: flex;
+  background: whitesmoke;
+  border-radius: 50%;
+  width: 35px; 
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  font-size: 23px;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.footer-social-icon:hover {
+  background: #007bff;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 26px;
+    padding: 0 14px;
+  }
+  .footer-section {
+    min-width: 120px;
+  }
+}
